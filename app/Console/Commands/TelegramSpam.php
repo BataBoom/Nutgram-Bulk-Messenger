@@ -70,13 +70,13 @@ class TelegramSpam extends Command
             
             if($bot->sendMessage(
                 text: $this->parseViewMessage('spam', [
-                        'dearUser' => "Dear ".$chat->user->name.",",
+                        'dearUser' => "Dear ".$chat->chat->user->name.",",
                     ]),
                 chat_id: $chat->chat_id,
                 parse_mode: ParseMode::HTML,
             )) {
                 $chat->update(['sent' => true]);
-                $this->line('SENT: ' . $chat->chat_id.' - '.$chat->user->name);
+                $this->line('SENT: ' . $chat->chat_id.' - '.$chat->chat->user->name);
                 }
         
             sleep($this->timeout);
