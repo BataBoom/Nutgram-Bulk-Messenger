@@ -16,7 +16,8 @@ $createMsg = TelegramSpamMsg::Create([
 'recipients' => json_encode($recipients->toArray()),
 ]);
 
-Add Recipients to Queue:
+
+Should add this bit to the Command, though for now, Add Recipients to Queue:
 foreach($recipients as $recipient)
 {
   TelegramSpam::Create([
