@@ -1,8 +1,8 @@
 Telegram Bulk Messenger for Nutgram Laravel.
 
 Requires:
-https://github.com/nutgram/nutgram
-https://github.com/laravel/laravel
+- https://github.com/nutgram/nutgram
+- https://github.com/laravel/laravel
 
 
 ```
